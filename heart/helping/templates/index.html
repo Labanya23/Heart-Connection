@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<section class="container mb-5">
+    <div class="row shadow-sm p-3 mb-5 bg-white rounded"> 
+        <div class="col-lg-6">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="{% static 'images/img1.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="{% static 'images/img2.jpg' %}" class="d-block w-100" alt="...">
+                  </div>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-6 mt-4 d-flex align-items-center">
+            <div class="card border-primary mb-3 " >
+                <div class="card-header text-center">Donation & Volunteer</div>
+                <div class="card-body text-primary ">
+                  <h5 class="card-title text-center">Helping People</h5>
+                  <p class="card-text">Help others without any reason and give without the expectation of receiving anything in return.</p>
+                  <p class="text-danger">Always give without remembering and always receive without forgotting.</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    {% endblock main %}

@@ -362,7 +362,7 @@ class signup_volunteer(View):
             logout(request)
             return redirect('index')
 
-        # admin view details
+        
         class accepted_donationdetail(View):
             def get(self, request, pid):
                 donation = Donation.objects.get(id=pid)

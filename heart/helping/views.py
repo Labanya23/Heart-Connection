@@ -11,6 +11,12 @@ from datetime import date
 def index(request):
     return render(request, "index.html")
 
+def gallery(request):
+    gallery=Gallery.objects.all()
+
+    return render(request, "gallery.html",locals())
+
+
 
 class login_admin(View):
     def get(self, request):

@@ -3,7 +3,7 @@
 {% block main %}
 
 <section class="container mb-5">
-    <div class="row shadow-sm p-3 mb-5 bg-white rounded"> 
+    <div class="row shadow-sm p-3 mb-5 bg-blue rounded"> 
         <div class="col-lg-6">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -21,11 +21,62 @@
             <div class="card border-primary mb-3 " >
                 <div class="card-header text-center">Connecting Hearts And Hands</div>
                 <div class="card-body text-primary ">
-                  <h5 class="card-title text-center">Helping People</h5>
+                  <h5 class="card-title text-warning">Helping People</h5>
                   <p class="card-text">Help others without any reason and give without the expectation of receiving anything in return.</p>
-                  <p class="text-danger">Always give without remembering and always receive without forgotting.</p>
+                  <p class="card-text">Always give without remembering and always receive without forgotting.</p>
                 </div>
               </div>
         </div>
     </div>
+    </section>
+    <section class="page-section bg-white" id="about">
+      <div class="container">
+          <div class="text-center">
+              <h2 class="section-heading text-uppercase">About Us</h2>
+              <h3 class="section-subheading text-muted">Describe in here about Donation and Volunteer</h3>
+          </div>
+          <div class="row">
+              <div class="col-lg-6">
+                  <div class="team-member">
+                      <img class="mx-auto rounded-circle" src="{% static 'images/donation.jfif' %}" alt="..." />
+                      <h2>Donation</h2>
+                      <p class="text-muted">A donation is a gift for charity, humanitarian aid, or to benefit a cause. A donation may take various forms, including money, alms, services, or goods such as clothing, toys, food, or vehicles. A donation may satisfy medical needs such as blood or organs for transplant.</p>
+                  </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="team-member">
+                      <img class="mx-auto rounded-circle" src="{% static 'images/volunteer.jpg' %}" alt="..." />
+                      <h2>Volunteer</h2>
+                      <p class="text-muted">Unpaid volunteers are often the glue that holds a community together. Volunteering allows you to connect to your community and make it a better place. Even helping out with the smallest tasks can make a real difference to the lives of people, animals, and organizations in need. </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <section id="contact">
+    <div class="container mt-2">
+        <div class="text-center mt-5 mb-5">
+            <h2 class="section-heading text-uppercase">Contact US</h2>
+            <h3 class="section-subheading text-muted">We are always ready to helping people.</h3>
+        </div>
+        <div class="col d-flex justify-content-center align-items-center">
+        <div class="col-lg-6 mt-4 d-flex align-items-center bg-white contact-card align-items-center text-center">
+            <div class="col-xl-6 col-lg-6">
+                <div class="contact-head"><i class="fa fa-phone-square" aria-hidden="true"></i>
+                    Contact
+                </div>
+                <div class="contact-text">+8801234566</div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+                <div class="contact-head"><i class="fa fa-envelope" aria-hidden="true"></i>
+                    Send Mail
+                </div>
+                <div class="contact-text">Helping@gmail.com</div>
+            </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
     {% endblock main %}

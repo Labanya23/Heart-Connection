@@ -33,6 +33,8 @@ urlpatterns = [
     path("signup-donor/", views.signup_donor.as_view(), name="signup_donor"),
     path("signup-volunteer/", views.signup_volunteer.as_view(), name="signup_volunteer"),
     path("index-admin/", views.index_admin, name="index_admin"),
+    #path("index-admin/", views.index_admin, name="index_admin"),
+
 
     path('passord-reset/',auth_views.PasswordResetView.as_view(template_name='password_reset.html',
     form_class=MyPasswordResetForm),name='password_reset'),
@@ -41,12 +43,11 @@ urlpatterns = [
     path('password-reset-confirm/<uidb64>/<token>/',auth_views.PasswordResetConfirmView.as_view(
     template_name='password_reset_confirm.html',form_class=MySetPasswordForm),name='password_reset_confirm'),
     #path('password-reset-complete/',auth_views.PasswordResetCompleteView.as_view(template_name='password_reset_complete.html'),name='password_reset_cpmplete'),
-    
-
     # admin dashboard
     path("pending-donation/", views.pending_donation, name="pending_donation"),
     path("accepted-donation/", views.accepted_donation, name="accepted_donation"),
     path("rejected-donation/", views.rejected_donation, name="rejected_donation"),
+    
     path(
         "volunteerallocated-donation/",
         views.volunteerallocated_donation,
@@ -135,6 +136,9 @@ urlpatterns = [
     path('delete_volunteer/<int:pid>',views.delete_volunteer,name='delete_volunteer'),
     path('delete_area/<int:pid>',views.delete_area,name='delete_area'),
     path('delete_donor/<int:pid>',views.delete_donor,name='delete_donor'),
+    
+
+    
 ]
 
 

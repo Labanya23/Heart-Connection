@@ -159,7 +159,7 @@ class signup_volunteer(View):
             try:
                 user = User.objects.create_user(first_name=fn, last_name=ln, username=us, email=em, password=pwd)
                 Volunteer.objects.create(user=user, contact=contact, userpic=userpic, idpic=idpic, address=address,
-                                         aboutme=aboutme, status='pending')
+                aboutme=aboutme, status='pending')
                 messages.success(request, 'Congratulations!! voulunteer profile created successfully')
             except:
                 messages.warning(request, 'Profile Not Created')
